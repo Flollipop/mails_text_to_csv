@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { parseMails } from './utils/stringManipulation';
+import * as Papa from 'papaparse';
+import { createVirtualFileForDownload } from './utils/download';
 
 const labelTextArea = 'emails :';
 const containerStyle = { display: 'flex', width: '80%', height: '600px' };
@@ -29,7 +31,8 @@ class Converter extends Component {
 
   handleOnClick() {
     const mails = parseMails(this.state.textAreaValue);
-    console.log(mails);
+    const csv = Papa.unparse(mails);
+    createVirtualFileForDownload(csv);
   }
 
   render() {
