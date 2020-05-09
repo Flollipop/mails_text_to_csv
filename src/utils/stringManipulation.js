@@ -19,7 +19,9 @@ export function parseMails(str = '') {
   const rawMails = parser.match(str);
 
   if (rawMails && rawMails.length > 0) {
-    return rawMails.map(x => x.raw);
+    return rawMails.map(x => ({
+      mail: x.raw,
+    }));
   }
 
   return [];
