@@ -3,6 +3,6 @@ export function createVirtualFileForDownload(csv) {
   const csvURL = window.URL.createObjectURL(data);
   let tempLink = document.createElement('a');
   tempLink.href = csvURL;
-  tempLink.setAttribute('download', 'filename.csv');
+  tempLink.setAttribute('download', 'emails.csv');
   tempLink.click();
 }
