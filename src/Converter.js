@@ -8,8 +8,7 @@ const containerStyle = { display: 'flex', width: '80%', height: '600px' };
 
 const style = {
   alignItems: 'flex-start',
-  flexGrow: '1',
-  marginTop: '5px',
+  flex: '1',
   marginLeft: '25px',
   marginRight: '25px',
   marginBottom: '25px',
