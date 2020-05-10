@@ -3,7 +3,7 @@ import { parseMails } from './utils/stringManipulation';
 import * as Papa from 'papaparse';
 import { createVirtualFileForDownload } from './utils/download';
 
-const labelTextArea = 'emails :';
+const labelTextArea = 'Emails :';
 const containerStyle = { display: 'flex', width: '80%', height: '600px' };
 
 const style = {
