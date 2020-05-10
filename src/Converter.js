@@ -15,6 +15,13 @@ const style = {
   marginBottom: '25px',
 };
 
+const buttonStyle = {
+  display: 'flex',
+  maxHeight: '40px',
+  backgroundColor: '#01A7CA',
+  color: 'white',
+  border: 0,
+};
 class Converter extends Component {
   constructor(props) {
     super(props);
@@ -40,7 +47,9 @@ class Converter extends Component {
       <div style={containerStyle}>
         <label>{labelTextArea}</label>
         <textarea style={style} value={this.state.textAreaValue} onChange={this.handleChange} />
-        <button onClick={this.handleOnClick}>convert</button>
+        <button style={buttonStyle} onClick={this.handleOnClick}>
+          convert
+        </button>
       </div>
     );
   }
