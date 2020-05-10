@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Converter from './Converter';
 
+const repoLink = 'https://github.com/Flollipop/mails_text_to_csv';
 const headerLabel = 'Email address parser to csv';
 const footerLabel = 'See the code project';
 
@@ -12,7 +13,11 @@ function App() {
       <div className={'App-body'}>
         <Converter />
       </div>
-      <footer className={'App-footer'}>{footerLabel}</footer>
+      <footer className={'App-footer'}>
+        <a className={'App-link'} href={repoLink} target='_blank'>
+          {footerLabel}
+        </a>
+      </footer>
     </div>
   );
 }
