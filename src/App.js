@@ -7,7 +7,9 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>{headerLabel}</header>
-      <Converter />
+      <div className={'App-body'}>
+        <Converter />
+      </div>
     </div>
   );
 }

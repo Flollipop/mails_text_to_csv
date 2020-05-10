@@ -27,6 +27,12 @@
   padding: 10px;
 }
 
+.App-body {
+  background-color: #e8e8e8;
+  display: flex;
+  flex: 1;
+}
+
 .App-link {
   color: #61dafb;
 }
