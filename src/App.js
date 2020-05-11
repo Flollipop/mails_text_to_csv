@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import Converter from './Converter';
+import { Header } from './Header';
 
 const repoLink = 'https://github.com/Flollipop/mails_text_to_csv';
-const headerLabel = 'Email address parser to csv';
 const footerLabel = 'See the code project';
 
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>{headerLabel}</header>
+      <Header />
       <div className={'App-body'}>
         <Converter />
       </div>
