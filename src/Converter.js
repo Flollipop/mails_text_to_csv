@@ -8,7 +8,7 @@ const labelTextArea = 'Emails :';
 const placeholderTextArea =
   'Enter the text in which you want to extract emails address and click to download a csv file';
 
-const containerStyle = { display: 'flex', width: '80%', height: '600px' };
+const containerStyle = { display: 'flex', width: '80%', minHeight: '450px' };
 
 const style = {
   alignItems: 'flex-start',
