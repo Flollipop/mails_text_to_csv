@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { parseMails } from './utils/stringManipulation';
 import * as Papa from 'papaparse';
 import { createVirtualFileForDownload } from './utils/download';
+import { Button } from './Button';
 
 const labelTextArea = 'Emails :';
 const placeholderTextArea =
@@ -15,14 +16,6 @@ const style = {
   marginLeft: '25px',
   marginRight: '25px',
   marginBottom: '25px',
-};
-
-const buttonStyle = {
-  display: 'flex',
-  maxHeight: '40px',
-  backgroundColor: '#01A7CA',
-  color: 'white',
-  border: 0,
 };
 
 class Converter extends Component {
@@ -55,9 +48,7 @@ class Converter extends Component {
           value={this.state.textAreaValue}
           onChange={this.handleChange}
         />
-        <button style={buttonStyle} onClick={this.handleOnClick}>
-          convert
-        </button>
+        <Button onClick={this.handleOnClick} />
       </div>
     );
   }
