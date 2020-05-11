@@ -14,7 +14,7 @@ function App() {
         <Converter />
       </div>
       <footer className={'App-footer'}>
-        <a className={'App-link'} href={repoLink} target='_blank'>
+        <a className={'App-link'} href={repoLink} target='_blank' rel='noopener noreferrer'>
           {footerLabel}
         </a>
       </footer>
