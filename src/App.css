@@ -28,7 +28,7 @@
 }
 
 .App-footer {
-  background-color: #FFF;
+  background-color: #fff;
   min-height: 4vh;
   display: flex;
   justify-content: left;
@@ -48,7 +48,7 @@
 }
 
 .App-link {
-  color: #01A7CA;
+  color: #01a7ca;
   text-decoration: none;
 }
 
