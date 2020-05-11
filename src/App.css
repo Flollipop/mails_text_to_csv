@@ -52,6 +52,12 @@
   text-decoration: none;
 }
 
+.Converter-Container {
+  display: flex;
+  width: 80%;
+  min-height: 450px;
+}
+
 button {
   display: flex;
   max-height: 40px;
