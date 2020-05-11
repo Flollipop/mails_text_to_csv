@@ -52,6 +52,15 @@
   text-decoration: none;
 }
 
+button {
+  display: flex;
+  max-height: 40px;
+  background-color: #01a7ca;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

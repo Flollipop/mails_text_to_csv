@@ -17,7 +17,7 @@
     "react-scripts": "3.4.1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
+    "src/**/*.{js,jsx,json}": [
       "eslint --fix",
       "prettier --single-quote --write"
     ]
