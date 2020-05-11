@@ -8,14 +8,6 @@ const labelTextArea = 'Emails :';
 const placeholderTextArea =
   'Enter the text in which you want to extract emails address and click to download a csv file';
 
-const style = {
-  alignItems: 'flex-start',
-  flex: '1',
-  marginLeft: '25px',
-  marginRight: '25px',
-  marginBottom: '25px',
-};
-
 class Converter extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +33,6 @@ class Converter extends Component {
       <div className={'Converter-Container'}>
         <label>{labelTextArea}</label>
         <textarea
-          style={style}
           placeholder={placeholderTextArea}
           value={this.state.textAreaValue}
           onChange={this.handleChange}

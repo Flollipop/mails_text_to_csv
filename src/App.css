@@ -67,6 +67,14 @@ button {
   cursor: pointer;
 }
 
+textarea {
+  align-items: flex-start;
+  flex: 1;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
