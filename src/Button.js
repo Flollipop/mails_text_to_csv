@@ -1,14 +1,7 @@
 import * as PropTypes from 'prop-types';
 import React from 'react';
 
-const buttonStyle = {
-  display: 'flex',
-  maxHeight: '40px',
-  backgroundColor: '#01A7CA',
-  color: 'white',
-  border: 0,
-  cursor: 'pointer',
-};
+const buttonStyle = {};
 
 export function Button(props) {
   return (
