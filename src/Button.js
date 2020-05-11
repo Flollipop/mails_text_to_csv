@@ -7,6 +7,7 @@ const buttonStyle = {
   backgroundColor: '#01A7CA',
   color: 'white',
   border: 0,
+  cursor: 'pointer',
 };
 
 export function Button(props) {
