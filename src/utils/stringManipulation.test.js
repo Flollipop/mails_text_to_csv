@@ -19,4 +19,7 @@ test('parseMail - no email', () => {
 test('parseMail - 1 email', () => {
   const res = parseMails(withMail);
   chai.expect(res.length).to.be.equal(1);
+  chai.expect(res[0].mail).to.be.equal(mail1);
 });
+
+const mails = ['email1@email.fr'];
