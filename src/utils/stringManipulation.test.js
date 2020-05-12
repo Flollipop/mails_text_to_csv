@@ -5,8 +5,18 @@ import createChaiJestDiff from 'chai-jest-diff';
 
 chai.use(dirtyChai).use(createChaiJestDiff());
 
+const basicStringTest = mail => `123 test.test.com ${mail} https://google.fr http://google.fr`;
+const notAMail = 'qwerty@qwerty';
+const mail1 = 'mail@mail.fr';
+const noMail = basicStringTest(notAMail);
+const withMail = basicStringTest(mail1);
+
 test('parseMail - no email', () => {
-  const noMails = '1234 test.test.com qwerty@qwerty https://google.fr http://google.fr';
-  const res = parseMails(noMails);
+  const res = parseMails(noMail);
   chai.expect(res.length).to.be.equal(0);
+});
+
+test('parseMail - 1 email', () => {
+  const res = parseMails(withMail);
+  chai.expect(res.length).to.be.equal(1);
 });
