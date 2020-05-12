@@ -1,4 +1,4 @@
-import * as linkify from 'linkify-it';
+import LinkifyIt from 'linkify-it';
 
 // as we do not need http parsing with linkify we override the default schema to avoid useless match
 const httpOverride = {
@@ -9,7 +9,7 @@ const httpOverride = {
   },
 };
 
-const parser = linkify(httpOverride, {
+const parser = LinkifyIt(httpOverride, {
   fuzzyLink: false,
   fuzzyEmail: true,
   fuzzyIP: false,
