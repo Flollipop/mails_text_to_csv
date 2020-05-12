@@ -5,6 +5,7 @@ import { createVirtualFileForDownload } from './utils/download';
 import { Button } from './Button';
 
 const labelTextArea = 'Emails :';
+const buttonLabel = 'convert';
 const placeholderTextArea =
   'Enter the text in which you want to extract emails address and click to download a csv file';
 
@@ -37,7 +38,7 @@ class Converter extends Component {
           value={this.state.textAreaValue}
           onChange={this.handleChange}
         />
-        <Button onClick={this.handleOnClick} />
+        <Button onClick={this.handleOnClick} label={buttonLabel} />
       </div>
     );
   }
