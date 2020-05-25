@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { parseMails } from './utils/stringManipulation';
+import { parseMails } from '../utils/stringManipulation';
 import * as Papa from 'papaparse';
-import { createVirtualFileForDownload } from './utils/download';
-import { Button } from './components/Button';
+import { createVirtualFileForDownload } from '../utils/download';
+import { Button } from './Button';
 
 const labelTextArea = 'Emails :';
 const buttonLabel = 'Generate csv';
