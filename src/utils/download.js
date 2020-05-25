@@ -1,3 +1,7 @@
+/**
+ * create in browser a virtual csv file and launch the download for the user
+ * @param csv
+ */
 export function createVirtualFileForDownload(csv) {
   const data = new Blob([csv], { type: 'text/csv' });
   const csvURL = window.URL.createObjectURL(data);
