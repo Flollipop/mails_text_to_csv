@@ -9,4 +9,5 @@ export function createVirtualFileForDownload(csv) {
   tempLink.href = csvURL;
   tempLink.setAttribute('download', 'emails.csv');
   tempLink.click();
+  document.body.removeChild(tempLink);
 }
