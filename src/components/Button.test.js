@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, buttonTestId } from './Button';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+
+afterEach(cleanup);
 
 test('render button - smoke test', () => {
   const div = document.createElement('div');
