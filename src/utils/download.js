@@ -8,6 +8,8 @@ export function createVirtualFileForDownload(csv) {
   let tempLink = document.createElement('a');
   tempLink.href = csvURL;
   tempLink.setAttribute('download', 'emails.csv');
+  tempLink.style.display = 'none';
+  document.body.appendChild(tempLink);
   tempLink.click();
   document.body.removeChild(tempLink);
 }
