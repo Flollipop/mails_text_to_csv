@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Converter from './Converter';
 import { Header } from './Header';
-import { Footer } from './Footer';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
