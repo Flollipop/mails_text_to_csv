@@ -15,6 +15,11 @@ const parser = LinkifyIt(httpOverride, {
   fuzzyIP: false,
 });
 
+/**
+ * Use linkify to get an array of email addresses found in a text
+ * @param str
+ * @returns {{mail: str}[] | *[]}
+ */
 export function parseMails(str = '') {
   const rawMails = parser.match(str);
 
