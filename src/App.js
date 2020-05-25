@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Converter from './Converter';
-import { Header } from './Header';
+import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 
 function App() {
