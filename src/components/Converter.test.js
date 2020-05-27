@@ -35,3 +35,11 @@ test('initial state', () => {
   render(<Converter />);
   expect(screen.getByTestId('button')).toBeDisabled();
 });
+
+test('user enter empty input check disabled button', () => {
+  render(<Converter />);
+  const textArea = screen.getByTestId('textArea');
+  const userInput = '';
+  fireEvent.change(textArea, { target: { value: userInput } });
+  expect(screen.getByTestId('button')).toBeDisabled();
+});
