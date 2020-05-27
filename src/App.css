@@ -77,6 +77,13 @@ button {
   cursor: pointer;
   outline: 0;
 }
+button:disabled,
+button[disabled] {
+  border: 0;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
 
 textarea {
   align-items: flex-start;
