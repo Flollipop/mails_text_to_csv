@@ -58,6 +58,12 @@
   min-height: 450px;
 }
 
+.Github-logo {
+  fill: #01a7ca;
+  max-height: 45px;
+  max-width: 45px;
+}
+
 button {
   display: flex;
   max-height: 40px;
