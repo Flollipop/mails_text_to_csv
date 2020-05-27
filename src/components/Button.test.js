@@ -28,6 +28,16 @@ test('renders button test onClick', () => {
   expect(onClick).toHaveBeenCalledTimes(1);
 });
 
+test('renders disabled button test no onClick call', () => {
+  const onClick = jest.fn();
+  const labelToTest = 'button label';
+  const { getByTestId } = render(<Button label={labelToTest} onClick={onClick} disabled={true} />);
+
+  expect(getByTestId(buttonTestId)).toBeTruthy();
+  fireEvent.click(screen.getByTestId(buttonTestId));
+  expect(onClick).toHaveBeenCalledTimes(0);
+});
+
 test('button snapshot', () => {
   const tree = renderer.create(<Button label='button' />).toJSON();
   expect(tree).toMatchSnapshot();
