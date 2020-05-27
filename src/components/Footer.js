@@ -1,7 +1,7 @@
 import React from 'react';
 
 const repoLink = 'https://github.com/Flollipop/mails_text_to_csv';
-const footerLabel = 'See the code project';
+const footerLabel = 'See the code';
 
 export function Footer() {
   return (
