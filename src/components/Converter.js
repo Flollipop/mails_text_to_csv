@@ -40,7 +40,11 @@ class Converter extends Component {
           value={textAreaValue}
           onChange={this.handleChange}
         />
-        <Button onClick={this.handleOnClick} label={buttonLabel} />
+        <Button
+          onClick={this.handleOnClick}
+          label={buttonLabel}
+          disabled={textAreaValue.length === 0}
+        />
       </div>
     );
   }
