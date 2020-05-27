@@ -3,6 +3,7 @@
 exports[`button snapshot 1`] = `
 <button
   data-testid="button"
+  disabled={false}
 >
   button
 </button>
