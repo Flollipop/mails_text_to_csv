@@ -30,3 +30,8 @@ test('user enter input in and click button', () => {
   expect(textArea.value).toEqual(userInput);
   fireEvent.click(screen.getByTestId(buttonTestId));
 });
+
+test('initial state', () => {
+  render(<Converter />);
+  expect(screen.getByTestId('button')).toBeDisabled();
+});
