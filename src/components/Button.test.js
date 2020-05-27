@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, buttonTestId } from './Button';
 import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 
 afterEach(cleanup);
 
@@ -25,4 +26,9 @@ test('renders button test label', () => {
   expect(getByTestId(buttonTestId)).toBeTruthy();
   fireEvent.click(screen.getByTestId(buttonTestId));
   expect(handleClose).toHaveBeenCalledTimes(1);
+});
+
+test('button snapshot', () => {
+  const tree = renderer.create(<Button label='button' />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
