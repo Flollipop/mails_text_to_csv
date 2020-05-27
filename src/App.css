@@ -50,6 +50,8 @@
 .App-link {
   color: #01a7ca;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .Converter-Container {
