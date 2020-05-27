@@ -34,6 +34,7 @@ class Converter extends Component {
       <div className={'Converter-Container'}>
         <label>{labelTextArea}</label>
         <textarea
+          data-testid='textArea'
           placeholder={placeholderTextArea}
           value={this.state.textAreaValue}
           onChange={this.handleChange}
