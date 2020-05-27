@@ -18,7 +18,7 @@ test('renders button test label', () => {
   expect(getByTestId(buttonTestId)).toHaveTextContent(labelToTest);
 });
 
-test('renders button test label', () => {
+test('renders button test onClick', () => {
   const handleClose = jest.fn();
   const labelToTest = 'button label';
   const { getByTestId } = render(<Button label={labelToTest} onClick={handleClose} />);
