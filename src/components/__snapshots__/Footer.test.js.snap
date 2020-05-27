@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer snapshot 1`] = `
+<footer
+  className="App-footer"
+>
+  <a
+    className="App-link"
+    href="https://github.com/Flollipop/mails_text_to_csv"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    See the code
+  </a>
+</footer>
+`;
