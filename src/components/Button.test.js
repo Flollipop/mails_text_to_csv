@@ -19,13 +19,13 @@ test('renders button test label', () => {
 });
 
 test('renders button test onClick', () => {
-  const handleClose = jest.fn();
+  const onClick = jest.fn();
   const labelToTest = 'button label';
-  const { getByTestId } = render(<Button label={labelToTest} onClick={handleClose} />);
+  const { getByTestId } = render(<Button label={labelToTest} onClick={onClick} />);
 
   expect(getByTestId(buttonTestId)).toBeTruthy();
   fireEvent.click(screen.getByTestId(buttonTestId));
-  expect(handleClose).toHaveBeenCalledTimes(1);
+  expect(onClick).toHaveBeenCalledTimes(1);
 });
 
 test('button snapshot', () => {
