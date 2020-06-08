@@ -1,5 +1,5 @@
 
-[![Flollipop/mails_text_to_csv](https://circleci.com//gh/Flollipop/mails_text_to_csv.svg?style=shield )](https://circleci.com/gh/Flollipop/mails_text_to_csv)
+[![Flollipop/mails_text_to_csv](https://circleci.com//gh/Flollipop/mails_text_to_csv.svg?style=shield )](https://circleci.com/gh/Flollipop/mails_text_to_csv) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
