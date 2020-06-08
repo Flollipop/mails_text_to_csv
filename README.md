@@ -1,3 +1,6 @@
+
+[![Flollipop/mails_text_to_csv](https://circleci.com//gh/Flollipop/mails_text_to_csv.svg?style=shield )](https://circleci.com/gh/Flollipop/mails_text_to_csv)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
