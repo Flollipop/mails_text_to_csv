@@ -30,8 +30,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "cypress:open": "cypress open",
+    "test": "react-scripts test",
+    "test:e2e": "cypress run",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "eslint-check": "eslint --print-config src/App.js | eslint-config-prettier-check"
