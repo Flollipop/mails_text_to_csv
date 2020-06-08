@@ -1,5 +1,6 @@
-
-[![Flollipop/mails_text_to_csv](https://circleci.com//gh/Flollipop/mails_text_to_csv.svg?style=shield )](https://circleci.com/gh/Flollipop/mails_text_to_csv) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c3a4b8920d1047dfb91b8ff29c75f151)](https://www.codacy.com/manual/Flollipop/mails_text_to_csv?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Flollipop/mails_text_to_csv&amp;utm_campaign=Badge_Grade)
+[![Flollipop/mails_text_to_csv](https://circleci.com//gh/Flollipop/mails_text_to_csv.svg?style=shield )](https://circleci.com/gh/Flollipop/mails_text_to_csv)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
