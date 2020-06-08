@@ -3,13 +3,11 @@ import React from 'react';
 
 export const buttonTestId = 'button';
 
-export function Button({ onClick, label, disabled }) {
-  return (
-    <button data-testid={buttonTestId} onClick={onClick} disabled={disabled}>
-      {label}
-    </button>
-  );
-}
+export const Button = ({ onClick, label, disabled }) => (
+  <button data-testid={buttonTestId} onClick={onClick} disabled={disabled}>
+    {label}
+  </button>
+);
 
 Button.defaultProps = {
   disabled: false,
