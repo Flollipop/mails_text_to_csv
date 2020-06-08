@@ -3,9 +3,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Intro
 
-This is a project made in the hurry to help a friend who needed a quick utils to parse mails from unformatted messy text and transform it to a csv file.
-The emails need to be processed in the user browser locally.
+This is a project made in the hurry to help a friend who needed a quick tool to parse mails from unformatted messy text and transform it to a csv file containing only those mails.
+When I started the project I had some requirements from the end user, the emails need to be processed in the client browser locally and the user can't run a script directly on his device.
+
+First, I wasn't planning to let this on my github, but when I finished I thought it will be nice to let this tiny project on my repo and tests some new stuff on it like react-testing-library.
 
 A deploy of this repo can be found at this address : [https://mails-text-to-csv.herokuapp.com/](https://mails-text-to-csv.herokuapp.com/)
 
