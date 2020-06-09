@@ -35,7 +35,8 @@
     "test:e2e": "cypress run",
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
-    "eslint-check": "eslint --print-config src/App.js | eslint-config-prettier-check"
+    "eslint-check": "eslint --print-config src/App.js | eslint-config-prettier-check",
+    "serve": "serve -s build -l 3000"
   },
   "eslintConfig": {
     "extends": "react-app"
