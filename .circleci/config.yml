@@ -1,6 +1,11 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  cypress: cypress-io/cypress@1.24.0
+executors:
+  with-chrome:
+    docker:
+      - image: 'cypress/browsers:chrome69'
 jobs:
   build-and-test:
     executor:
@@ -11,7 +16,24 @@ jobs:
           steps:
             - run: npm install
             - run: npm test
+  cypress-test:
+    executor:
+      name: cypress/base-14
+    steps:
+      - cypress/install
+      - run: npm run test:e2e:ci
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  build-and-test:
+    jobs:
+      - build-and-test
+      - cypress/install:
+         requires:
+          - build-and-test
+         build: npm run build
+      - cypress/run:
+          requires:
+            - cypress/install
+          executor: with-chrome
+          browser: chrome
+          start: 'npm run serve'
+          wait-on: 'http://localhost:3000'
