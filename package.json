@@ -72,6 +72,7 @@
     "husky": "4.2.5",
     "lint-staged": "10.2.9",
     "prettier": "2.0.5",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.13.1",
+    "serve": "^11.3.2"
   }
 }
