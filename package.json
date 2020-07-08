@@ -12,7 +12,8 @@
     "papaparse": "5.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "snyk": "^1.360.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
@@ -34,7 +35,9 @@
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "eslint-check": "eslint --print-config src/App.js | eslint-config-prettier-check",
-    "serve": "serve -s build -l 3000"
+    "serve": "serve -s build -l 3000",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -76,5 +79,6 @@
     "prettier": "2.0.5",
     "react-test-renderer": "16.13.1",
     "serve": "^11.3.2"
-  }
+  },
+  "snyk": true
 }
